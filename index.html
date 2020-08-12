@@ -833,19 +833,19 @@ hljs.initHighlightingOnLoad();
 <section data-transition="fade" data-transition-speed="slow">
 <h3>Features and Analysis</h3>
 <div class="slideContent" >
-<p>In the Tree Height App, the user can make two selections in the side panel. The two selections are:</p>
+<p><small>In the Tree Height App, the user can make two selections in the side panel. The two selections are:</p>
 
 <ul>
 <li>The diameter of the tree (value between 5-25)</li>
 <li>If the model should be shown or not</li>
 </ul>
 
-<p>In the main panel, the user is presented with an introduction, follwed by a dotplot. The plot shows the height on the x-axis and the diameter on the y-axis. The selected diameter is shown with a bigger blue dot. By selecting the checkbox &#39;Show/Hide model&#39;, a blue line shows the regression line of the following linear regression:</p>
+<p>In the main panel, the user is presented with an introduction, follwed by a dotplot. The plot shows the height on the x-axis and the diameter on the y-axis. The selected diameter is shown with a bigger blue dot. By selecting the checkbox &#39;Show/Hide model&#39;, a blue line shows the regression line of the following linear regression:</small></p>
 
 <pre><code class="r">lm(Height~Diameter, data=trees)
 </code></pre>
 
-<p>When a diameter is selected the input is used in the following command:</p>
+<p><small>When a diameter is selected the input is used in the following command:</small></p>
 
 <pre><code class="r">predict(model1, newdata= data.frame(Diameter=ginput))
 </code></pre>
