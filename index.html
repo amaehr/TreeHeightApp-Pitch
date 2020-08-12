@@ -813,9 +813,6 @@ hljs.initHighlightingOnLoad();
 <div class="slideContent" >
 <p><small>For the <em>Tree Height App</em> the R base data set <em>trees</em> was used. This data set provides measurements of the diameter, height and volume of timber in 31 felled black cherry trees. Below the first six entries of the data set are shown. </small></p>
 
-<pre><code class="r">head(trees)
-</code></pre>
-
 <pre><code>  Girth Height Volume
 1   8.3     70   10.3
 2   8.6     65   10.3
@@ -840,7 +837,7 @@ hljs.initHighlightingOnLoad();
 <li>If the model should be shown or not</li>
 </ul>
 
-<p>In the main panel, the user is presented with an introduction, follwed by a dotplot. The plot shows the height on the x-axis and the diameter on the y-axis. The selected diameter is shown with a bigger blue dot. By selecting the checkbox &#39;Show/Hide model&#39;, a blue line shows the regression line of the following linear regression:</small></p>
+<p>The model is:</small></p>
 
 <pre><code class="r">lm(Height~Diameter, data=trees)
 </code></pre>
